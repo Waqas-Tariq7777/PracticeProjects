@@ -1,0 +1,77 @@
+/* Overlay */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* high so it's above header/navbar */
+  overflow: hidden;
+}
+
+/* Content wrapper */
+.custom-modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* prevents image touching edges */
+}
+
+/* Zoom-in animation */
+.custom-modal-animate {
+  animation: customZoomIn 0.35s ease forwards;
+}
+
+@keyframes customZoomIn {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsive Image */
+.custom-modal-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #000;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* Close button */
+.custom-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 42px;
+  height: 42px;
+  font-size: 26px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
+}
+
+.custom-modal-close:hover {
+  background: rgba(255, 70, 70, 0.9);
+  transform: rotate(90deg) scale(1.1);
+  box-shadow: 0 0 12px rgba(255, 70, 70, 0.8);
+}

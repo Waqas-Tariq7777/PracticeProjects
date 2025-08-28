@@ -1,0 +1,34 @@
+.pages-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    text-align: center;
+    position: relative;
+}
+
+.pages-bg .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.bg-text h2 {
+    font-size: 20px;
+}
+
+.bg-text h3 {
+    font-size: 40px;
+    font-weight: bolder;
+}

@@ -1,0 +1,16 @@
+.counter{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.counter button{
+    padding: 3px 10px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+.counter p{
+    border: 1px solid gray;
+    padding: 4px 30px;
+}

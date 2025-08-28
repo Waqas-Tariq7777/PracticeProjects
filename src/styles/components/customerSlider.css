@@ -1,0 +1,133 @@
+.custom-slider-container {
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+.custom-slider {
+    display: flex;
+    align-items: center;
+    width: 140%;
+}
+
+.custom-slide {
+    flex: 0 0 calc(100% / 3);
+    /* default: 3 per row */
+    box-sizing: border-box;
+    padding: 5px;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    max-width: 370px;
+}
+
+.custom-slide::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+    bottom: 30%;
+    left: 0%;
+    width: 1px;
+    background-color: gray;
+    border-left: 1px solid rgb(252, 251, 251);
+    transform: translateX(-50%);
+}
+
+.custom-slide img {
+    width: 25%;
+    margin: 0px auto;
+    border-radius: 50%;
+}
+
+.custom-person-top {
+    color: #5e7e32;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    left: 210px;
+    font-size: 50px;
+    padding-top: 25px;
+}
+
+.custom-person-para {
+    max-width: 300px;
+    margin: 0px auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.custom-slide h4 {
+    font-weight: bold;
+}
+
+.custom-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 8px;
+}
+
+.custom-dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-dot.active {
+    background-color: #5e7e32;
+}
+
+
+@media (max-width: 768px) {
+    .custom-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .custom-slider {
+        width: 100% !important;
+    }
+
+    .custom-person-top {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+    .custom-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .custom-slider {
+        width: 100% !important;
+    }
+
+    .custom-person-top {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width:1200px) {
+    .custom-slide {
+        flex: 0 100% 100%;
+        max-width: 100%;
+    }
+
+    .custom-person-top {
+        display: none;
+    }
+     .custom-slider {
+    width: 370% !important;
+  }
+}

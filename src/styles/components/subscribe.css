@@ -1,0 +1,53 @@
+/*Subscribe*/
+.subscribe-bg{
+    background-color: #f3f0f0;
+    padding: 80px 20px 80px 20px;
+    margin-top: 100px;
+}
+.subscribe{
+    max-width: 1100px;
+    margin: 0px auto;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.subscribe-item h2{
+font-size: 25px;
+font-weight: bold;
+padding-bottom: 20px;
+}
+.subscribe-item p{
+    color: gray;
+}
+.subscribe-item {
+  position: relative; 
+  flex: 1;
+}
+
+.subscribe-item input {
+  width: 100%;
+  padding: 12px 100px 12px 15px; 
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.subscribe-item button {
+  position: absolute;
+  top: 48%;
+  right: 0px;
+  transform: translateY(-50%);
+  padding: 12px 20px;
+  background-color: #82ae46;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .subscribe{
+        display: block;
+        gap: 0px;
+    }
+    .subscribe-item p{
+        margin-bottom: 20px;
+    }
+}
